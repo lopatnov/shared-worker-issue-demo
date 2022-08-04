@@ -1,0 +1,14 @@
+{
+  "name": "shared-worker-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "express-reverse-proxy"
+  },
+  "author": "lopatnov",
+  "license": "MIT",
+  "dependencies": {
+    "@lopatnov/express-reverse-proxy": "^1.2.0"
+  }
+}

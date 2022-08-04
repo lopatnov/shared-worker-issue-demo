@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <p>Try to test in different browser tabs, you will see that workers are not shared</p>
+            <p>Try to see <a href="chrome://inspect/#workers">chrome://inspect/#workers</a>, you will see that workers
+                are different. Even with the same Blob text, because Blobs are different</p>
+            <p>Even with the same text, it creates different shared workers. I can use import script, but still shared
+                workers will be different</p>
+        </div>
+    </div>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="workerText" class="materialize-textarea" rows="10" cols="50"></textarea>
+                    <label class="active" for="workerText">Shared Worker Text</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <button type="button" id="executeWorker">Execute</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div id="messages" class="input-field col s12">
+            <p>Result of messages</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
