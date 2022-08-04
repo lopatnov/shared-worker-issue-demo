@@ -1,6 +1,6 @@
 # Shared Worker Issue
 
-- run `npm start` to start simple server with configuration in `server-config.json`
+- run `npm install` && `npm start` to start simple server with configuration in `server-config.json`
 - open <http://localhost:8080/>
 
 Try to test in different browser tabs, you will see that workers are not shared
